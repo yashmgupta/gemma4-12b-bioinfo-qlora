@@ -2,8 +2,9 @@
 
 This repository contains a **research-grade Jupyter notebook** for fine-tuning **Gemma 4 12B (instruction-tuned)** on a bioinformatics Q&A dataset using **4-bit QLoRA + SFT (TRL)**. The resulting models are available on Hugging Face for both standard `transformers` usage and GGUF-based local inference.
 
+- 🔗 **GitHub repo (this project):** https://github.com/yashmgupta/gemma4-12b-bioinfo-qlora  
 - 🔗 **Fine-tuned model (Transformers):** https://huggingface.co/yashm/gemma4-12b-bioinfo  
-- 🔗 **Quantized GGUF weights:** https://huggingface.co/yashm/gemma4-12b-bioinfo-GGUF
+- 🔗 **Quantized GGUF weights:** https://huggingface.co/yashm/gemma4-12b-bioinfo-GGUF[web:2]  
 
 > ⚠️ This project is for **research and education** in bioinformatics and computational biology. It is **not** a medical device and must not be used for clinical decision-making.[web:2]
 
@@ -21,6 +22,9 @@ This repository contains a **research-grade Jupyter notebook** for fine-tuning *
   - Includes a **qualitative inference section** with real bioinformatics questions
 
 - **Reproducible training recipe** for the published models on Hugging Face, including hyperparameters tuned for a single 24 GB GPU.
+
+- A public reference implementation at:  
+  `https://github.com/yashmgupta/gemma4-12b-bioinfo-qlora`
 
 ---
 
@@ -42,7 +46,9 @@ Make sure you respect the licenses/terms of **Gemma 4**, the **dataset(s)** you 
 
 ## 🗂️ Repository structure
 
-Typical layout for this repo:
+This GitHub repository: https://github.com/yashmgupta/gemma4-12b-bioinfo-qlora
+
+Typical layout:
 
 - `gemed_git.ipynb` – main notebook:
   - Environment checks
@@ -82,7 +88,7 @@ The notebook is written for:
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/<your-username>/gemma4-12b-bioinfo-qlora.git
+git clone https://github.com/yashmgupta/gemma4-12b-bioinfo-qlora.git
 cd gemma4-12b-bioinfo-qlora
 ```
 
@@ -224,7 +230,7 @@ answer = tokenizer.decode(outputs[inputs["input_ids"].shape:], skip_special_toke
 print(answer.strip())
 ```
 
-> 💡 For multimodal use (image or other inputs), refer to the latest Gemma 4 12B developer docs and `AutoModelForImageTextToText` guidance.[web:5][web:14]
+> 💡 For multimodal use (image or other inputs), refer to the latest Gemma 4 12B developer docs and `AutoModelForImageTextToText` guidance.[web:5][web:14][web:34]
 
 ### Option B — GGUF (`llama.cpp`, LM Studio, Ollama, llama-cpp-python)
 
@@ -315,7 +321,7 @@ By using this repository and the associated models, you agree to take full respo
 ## 📜 License & attribution
 
 - **Base model:** Gemma 4 12B weights are released by Google under the **Apache-2.0 license**, which permits commercial and derivative use with appropriate attribution.[web:18][web:20][web:26]
-- **This repository:** Choose and include a license file (e.g., Apache-2.0, MIT) and update this section accordingly.
+- **This repository:** See the `LICENSE` file in https://github.com/yashmgupta/gemma4-12b-bioinfo-qlora and update it if you change the licensing.
 - **Datasets:** Respect the licenses and usage terms of `yashm/bioinformatics-qa-dataset` and any other datasets you plug into the notebook.[web:19][web:23]
 
 When you use or publish work based on this repo, please consider citing:
