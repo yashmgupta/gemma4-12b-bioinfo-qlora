@@ -3,7 +3,7 @@
 This repository contains a **research-grade Jupyter notebook** for fine-tuning **Gemma 4 12B (instruction-tuned)** on a bioinformatics Q&A dataset using **4-bit QLoRA + SFT (TRL)**. The resulting models are available on Hugging Face for both standard `transformers` usage and GGUF-based local inference.
 
 - 🔗 **Fine-tuned model (Transformers):** https://huggingface.co/yashm/gemma4-12b-bioinfo  
-- 🔗 **Quantized GGUF weights:** https://huggingface.co/yashm/gemma4-12b-bioinfo-GGUF[web:2]  
+- 🔗 **Quantized GGUF weights:** https://huggingface.co/yashm/gemma4-12b-bioinfo-GGUF
 
 > ⚠️ This project is for **research and education** in bioinformatics and computational biology. It is **not** a medical device and must not be used for clinical decision-making.[web:2]
 
