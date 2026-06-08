@@ -4,9 +4,9 @@ This repository contains a **research-grade Jupyter notebook** for fine-tuning *
 
 - 🔗 **GitHub repo (this project):** https://github.com/yashmgupta/gemma4-12b-bioinfo-qlora  
 - 🔗 **Fine-tuned model (Transformers):** https://huggingface.co/yashm/gemma4-12b-bioinfo  
-- 🔗 **Quantized GGUF weights:** https://huggingface.co/yashm/gemma4-12b-bioinfo-GGUF[web:2]  
+- 🔗 **Quantized GGUF weights:** https://huggingface.co/yashm/gemma4-12b-bioinfo-GGUF  
 
-> ⚠️ This project is for **research and education** in bioinformatics and computational biology. It is **not** a medical device and must not be used for clinical decision-making.[web:2]
+> ⚠️ This project is for **research and education** in bioinformatics and computational biology. It is **not** a medical device and must not be used for clinical decision-making.
 
 ---
 
@@ -31,16 +31,16 @@ This repository contains a **research-grade Jupyter notebook** for fine-tuning *
 ## 🧩 Upstream models & dataset
 
 - **Base model:** `google/gemma-4-12B-it` (multimodal, instruction-tuned)  
-  Gemma 4 12B is released under the permissive **Apache-2.0 license**, allowing commercial use and modification as long as you comply with the license terms.[web:18][web:20][web:26]
+  Gemma 4 12B is released under the permissive **Apache-2.0 license**, allowing commercial use and modification as long as you comply with the license terms.
 
 - **Fine-tuned model (this work):**
   - `yashm/gemma4-12b-bioinfo` — standard `transformers` weights
-  - `yashm/gemma4-12b-bioinfo-GGUF` — quantized GGUF files for `llama.cpp`, LM Studio, Ollama-compatible runtimes, and `llama-cpp-python`[web:2]
+  - `yashm/gemma4-12b-bioinfo-GGUF` — quantized GGUF files for `llama.cpp`, LM Studio, Ollama-compatible runtimes, and `llama-cpp-python`
 
 - **Training data (example):**
-  - `yashm/bioinformatics-qa-dataset` — bioinformatics and computational biology Q&A pairs curated on Hugging Face.[web:19][web:23]
+  - `yashm/bioinformatics-qa-dataset` — bioinformatics and computational biology Q&A pairs curated on Hugging Face.
 
-Make sure you respect the licenses/terms of **Gemma 4**, the **dataset(s)** you use, and any additional resources you integrate.[web:18][web:20][web:22]
+Make sure you respect the licenses/terms of **Gemma 4**, the **dataset(s)** you use, and any additional resources you integrate.
 
 ---
 
@@ -230,11 +230,11 @@ answer = tokenizer.decode(outputs[inputs["input_ids"].shape:], skip_special_toke
 print(answer.strip())
 ```
 
-> 💡 For multimodal use (image or other inputs), refer to the latest Gemma 4 12B developer docs and `AutoModelForImageTextToText` guidance.[web:5][web:14][web:34]
+> 💡 For multimodal use (image or other inputs), refer to the latest Gemma 4 12B developer docs and `AutoModelForImageTextToText` guidance.
 
 ### Option B — GGUF (`llama.cpp`, LM Studio, Ollama, llama-cpp-python)
 
-The GGUF repo (`yashm/gemma4-12b-bioinfo-GGUF`) contains multiple quantizations such as a 4‑bit variant for efficient local inference.[web:2]
+The GGUF repo (`yashm/gemma4-12b-bioinfo-GGUF`) contains multiple quantizations such as a 4‑bit variant for efficient local inference.
 
 **Example with `llama.cpp` (CLI):**
 
@@ -304,7 +304,7 @@ print(output["choices"]["text"].strip())
 
 ## ⚖️ Safety, limitations & responsible use
 
-- The model is optimized for **bioinformatics and computational biology assistance**, not for general medicine or clinical care.[web:2][web:19]
+- The model is optimized for **bioinformatics and computational biology assistance**, not for general medicine or clinical care.
 - Outputs may be **incorrect, incomplete, or outdated**; always cross-check against:
   - Primary literature  
   - Curated databases (NCBI, Ensembl, UniProt, PDB, etc.)  
@@ -314,15 +314,15 @@ print(output["choices"]["text"].strip())
   - Choosing treatments or drugs
   - Any task that requires regulatory approval or clinical validation
 
-By using this repository and the associated models, you agree to take full responsibility for verifying outputs and for complying with all applicable laws, regulations, and licensing terms.[web:2][web:18]
+By using this repository and the associated models, you agree to take full responsibility for verifying outputs and for complying with all applicable laws, regulations, and licensing terms.
 
 ---
 
 ## 📜 License & attribution
 
-- **Base model:** Gemma 4 12B weights are released by Google under the **Apache-2.0 license**, which permits commercial and derivative use with appropriate attribution.[web:18][web:20][web:26]
+- **Base model:** Gemma 4 12B weights are released by Google under the **Apache-2.0 license**, which permits commercial and derivative use with appropriate attribution.
 - **This repository:** See the `LICENSE` file in https://github.com/yashmgupta/gemma4-12b-bioinfo-qlora and update it if you change the licensing.
-- **Datasets:** Respect the licenses and usage terms of `yashm/bioinformatics-qa-dataset` and any other datasets you plug into the notebook.[web:19][web:23]
+- **Datasets:** Respect the licenses and usage terms of `yashm/bioinformatics-qa-dataset` and any other datasets you plug into the notebook.
 
 When you use or publish work based on this repo, please consider citing:
 
@@ -334,6 +334,6 @@ When you use or publish work based on this repo, please consider citing:
 
 ## 🙌 Acknowledgements
 
-- **Gemma 4** team and contributors for releasing powerful, Apache‑2.0‑licensed models to the community.[web:18][web:20]
+- **Gemma 4** team and contributors for releasing powerful, Apache‑2.0‑licensed models to the community.
 - **Hugging Face** for hosting models, datasets, and making fine-tuning workflows accessible.
 - The open-source bioinformatics and ML communities whose tools and datasets made this work possible.
